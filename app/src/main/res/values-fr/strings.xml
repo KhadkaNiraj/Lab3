@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">MonApp</string>
+
+    <!-- Button text -->
+    <string name="click_here">Cliquez ici</string>
+
+    <!-- Checkbox text -->
+    <string name="check_this_out">Vérifiez ceci!</string>
+
+    <!-- TextView content -->
+    <string name="look_at_my_gui">Regardez mon interface:</string>
+
+    <!-- EditText hint -->
+    <string name="type_here">Tapez ici</string>
+
+    <!-- Toast message -->
+    <string name="toast_message">Voici plus d\'informations</string>
+
+    <!-- Snackbar text -->
+    <string name="switch_on_off">Allumer / Éteindre</string>
+
+    <!-- Snackbar undo action -->
+    <string name="undo_action">Annuler</string>
+</resources>
+

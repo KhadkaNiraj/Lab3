@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">Lab02CanFr</string>
+    <!-- App name -->
+    <string name="app_name">MyApp</string>
+
+    <!-- Button text -->
+    <string name="click_here">Click here</string>
+
+    <!-- Checkbox text -->
+    <string name="check_this_out">Check this out!</string>
+
+    <!-- TextView content -->
+    <string name="look_at_my_gui">Look at my GUI:</string>
+
+    <!-- EditText hint -->
+    <string name="type_here">Type here</string>
+
+    <!-- Toast message -->
+    <string name="toast_message">Here is more information</string>
+
+    <!-- Snackbar text -->
+    <string name="switch_on_off">Switch on / off</string>
+
+    <!-- Snackbar undo action -->
+    <string name="undo_action">Undo</string>
 </resources>
