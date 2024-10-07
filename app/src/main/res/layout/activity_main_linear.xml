@@ -1,16 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="vertical">
 
     <!-- Row 1: TextView -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Look at my GUI:"
-        android:textSize="30dp" />
+        android:text="@string/look_at_my_gui"
+        android:textSize="30dp"/>
 
     <!-- Row 2: Button and CheckBox -->
     <LinearLayout
@@ -25,15 +23,14 @@
             android:layout_weight="1"
             android:text="@string/click_here"/>
 
-
         <CheckBox
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Check this out!" />
+            android:text="@string/check_this_out"/>
     </LinearLayout>
 
-    <!-- Row 3: ImageButton and Switch -->
+    <!-- Row 3: Switch and ImageButton -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +40,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/flag" />
+            android:src="@drawable/flag"
+            android:contentDescription="Flag"/>
 
         <Switch
             android:id="@+id/mySwitch"
@@ -51,14 +49,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/switch_on_off"/>
-
     </LinearLayout>
 
     <!-- Row 4: EditText -->
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Type here"
-        android:inputType="textPersonName" />
-
+        android:layout_height="48dp"
+        android:hint="@string/type_here"
+        android:inputType="textPersonName"/>
 </LinearLayout>
