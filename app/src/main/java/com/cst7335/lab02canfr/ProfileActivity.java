@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.app.Activity;
+import android.widget.Toast;
 
 import android.Manifest;
 
@@ -77,9 +78,14 @@ public class ProfileActivity extends AppCompatActivity {
 
     // start camera Intent
     private void dispatchTakePictureIntent() {
+        Log.d(TAG, "Dispatching take picture intent.");
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
             myPictureTakerLauncher.launch(takePictureIntent);
+            Log.d(TAG, "Camera intent launched successfully.");
+        } else {
+            Log.e(TAG, "No app available to handle the camera intent.");
+            Toast.makeText(ProfileActivity.this, "No camera app found. Please install a camera app.", Toast.LENGTH_LONG).show();
         }
     }
     @Override
